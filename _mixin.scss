@@ -58,3 +58,10 @@ Mixins
   -moz-box-shadow: $s;
   box-shadow: $s;
 }
+
+@mixin set_transition( $s... ){
+  -webkit-transition: $s;
+  -moz-transition: $s;
+  -o-transition: $s;
+  transition: $s;
+}
