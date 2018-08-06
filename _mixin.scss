@@ -65,3 +65,11 @@ Mixins
   -o-transition: $s;
   transition: $s;
 }
+
+@mixin set_transform( $s... ){
+  -webkit-transform: $s;
+  -moz-transform: $s;
+  -ms-transform: $s;
+  -o-transform: $s;
+  transform: $s;
+}
