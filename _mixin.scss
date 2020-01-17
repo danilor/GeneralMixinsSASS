@@ -12,6 +12,15 @@ Mixins
   display: flex;
 }
 
+
+@mixin flexImportant(){
+  display: -webkit-box!important;
+  display: -moz-box!important;
+  display: -ms-flexbox!important;
+  display: -webkit-flex!important;
+  display: flex!important;
+}
+
 @mixin flex_align( $c ){
   -webkit-box-align: $c;
   -moz-box-align: $c;
