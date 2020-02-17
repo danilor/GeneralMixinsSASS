@@ -53,7 +53,9 @@ Mixins
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
-  background-image: url($u);
+  @if( $u != "" ){
+    background-image: url($u);
+  }
 }
 
 @mixin border_rad( $c ){
